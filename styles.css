@@ -17,8 +17,6 @@
     --bronze: #cd7f32;
     --rust: #8b4513;
 
-    --white: #ffffff;
-
     /* Gradients */
     --primary-gradient: linear-gradient(to right, var(--ember-orange), var(--ember-red));
     --primary-gradient-hover: linear-gradient(to right, var(--ember-red), var(--ember-orange));
@@ -35,16 +33,9 @@
     --border-radius-full: 9999px;
 
     /* Transitions */
-    --transition-fast: 0.2s ease;
-    --transition: 0.3s ease;
-    --transition-slow: 0.5s ease;
-
-    /* Shadows */
-    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-    --shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
-    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-    --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    --transition-fast: 0.2s ease-in-out;
+    --transition: 0.3s ease-in-out;
+    --transition-slow: 0.5s ease-in-out;
 
     overflow-y: scroll;
     scrollbar-width: none;
@@ -139,7 +130,8 @@ html {
 body {
     font-family: "Inter", sans-serif;
     background: var(--background-gradient);
-    color: var(--white);
+    color: white;
+    
     line-height: 1.6;
     overflow-x: hidden;
 }
@@ -210,8 +202,8 @@ h6 {
 }
 
 .bg-blob-1 {
-    width: 50rem;
-    height: 50rem;
+    width: 100rem;
+    height: 100rem;
     background-color: var(--ember-red);
     top: 10%;
     left: -10%;
@@ -219,8 +211,8 @@ h6 {
 }
 
 .bg-blob-2 {
-    width: 40rem;
-    height: 40rem;
+    width: 80rem;
+    height: 80rem;
     background-color: var(--copper);
     bottom: -10%;
     right: -5%;
@@ -228,8 +220,8 @@ h6 {
 }
 
 .bg-blob-3 {
-    width: 30rem;
-    height: 30rem;
+    width: 60rem;
+    height: 60rem;
     background-color: var(--ember-orange);
     bottom: 30%;
     right: 20%;
@@ -271,18 +263,18 @@ h6 {
 
 .btn-primary {
     background: var(--primary-gradient);
-    transition: transform 0.3s ease;
-    color: var(--white);
+    color: white;
 }
 
 .btn-primary:hover {
-    transform: translateY(-5px);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+    transform: translate(-5px, -5px);
 }
 
 .btn-outline {
     background: transparent;
     border: 1px solid rgba(255, 255, 255, 0.2);
-    color: var(--white);
+    color: white;
 }
 
 .btn-outline:hover {
@@ -395,7 +387,7 @@ h6 {
     display: block;
     width: 1.5rem;
     height: 2px;
-    background-color: var(--white);
+    background-color: white;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -451,7 +443,7 @@ h6 {
 .mobile-menu-close {
     background: transparent;
     border: none;
-    color: var(--white);
+    color: white;
     font-size: 1.5rem;
     cursor: pointer;
 }
@@ -508,6 +500,24 @@ h6 {
     font-size: 3rem;
     margin-bottom: 1.5rem;
     line-height: 1.1;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+        filter: drop-shadow(0 0 16px black);
+    }
+
+    100% {
+        transform: translateY(-25%);
+        filter: drop-shadow(0 0.25em 16px black);
+    }
+}
+
+.hero-hook {
+    font-size: 200%;
+    margin-bottom: 1rem;
+    animation: float 3s ease-in-out forwards;
 }
 
 .hero-title span {
@@ -669,7 +679,6 @@ h6 {
 
 .service-card {
     background-color: rgba(45, 45, 45, 0.3);
-    backdrop-filter: blur(10px);
     border: 1px solid rgba(184, 115, 51, 0.2);
     border-radius: var(--border-radius-lg);
     padding: 2rem;
@@ -694,7 +703,7 @@ h6 {
 }
 
 .service-card:hover {
-    transform: translateY(-25px);
+    transform: translate(-5px, -5px);
     border-color: rgba(184, 115, 51, 0.5);
 }
 
@@ -715,7 +724,7 @@ h6 {
 
 .service-icon i {
     font-size: 1.5rem;
-    color: var(--white);
+    color: white;
 }
 
 .service-title {
@@ -869,16 +878,17 @@ h6 {
     background-color: rgba(45, 45, 45, 0.5);
     border: 1px solid rgba(184, 115, 51, 0.2);
     border-radius: var(--border-radius);
-    color: var(--white);
+    color: white;
     font-family: inherit;
-    transition: border-color var(--transition-fast);
+    transition: all var(--transition-fast);
 }
 
 .form-group input:focus,
 .form-group textarea:focus {
     outline: none;
+    transform: translate(-2px, -2px);
     border-color: var(--ember-orange);
-    box-shadow: 0 0 0 2px rgba(242, 112, 89, 0.2);
+    box-shadow: 5px 5px 5px rgba(242, 112, 89, 0.7);
 }
 
 .form-group input::placeholder,
@@ -930,7 +940,7 @@ h6 {
 
 .social-link:hover {
     background-color: var(--ember-orange);
-    color: var(--white);
+    color: white;
     transform: translateY(-3px);
 }
 
@@ -1164,18 +1174,18 @@ h6 {
     }
 
     .bg-blob-1 {
-        height: 25rem;
-        width: 25rem;
+        height: 35rem;
+        width: 35rem;
     }
 
     .bg-blob-2 {
-        height: 20rem;
-        width: 20rem;
+        height: 30rem;
+        width: 30rem;
     }
 
     .bg-blob-3 {
-        height: 15rem;
-        width: 15rem;
+        height: 25rem;
+        width: 25rem;
     }
 
     .form-grid {
