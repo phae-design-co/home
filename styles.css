@@ -509,15 +509,15 @@ h6 {
     }
 
     100% {
-        transform: translateY(-50%);
-        filter: drop-shadow(0 0.50em 16px black);
+        transform: translateY(-30%);
+        filter: drop-shadow(0 0.30em 16px black);
     }
 }
 
 .hero-hook {
     font-size: 200%;
     margin-bottom: 1rem;
-    animation: float 1.5s ease-in-out forwards;
+    animation: float 2s ease-in-out forwards;
 }
 
 .hero-title span {
