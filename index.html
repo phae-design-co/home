@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phae | Design Studio based in Southern Maine</title>
+    <meta name="description" content="Phae is a creative design studio based in Southern Maine, specializing in web-development and brand-design for modern businesses.">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- Loading Screen -->
+<div class="loading-screen">
+    <div class="loading-content">
+        <div class="loading-logo">
+            <span>phae</span>
+            <span class="loading-logo-dot"></span>
+        </div>
+        <div class="loading-bar-container">
+            <div class="loading-bar"></div>
+        </div>
+    </div>
+</div>
+<!-- Background decoration -->
+<div class="bg-decoration">
+    <div class="bg-blob bg-blob-1"></div>
+    <div class="bg-blob bg-blob-2"></div>
+    <div class="bg-blob bg-blob-3"></div>
+</div>
+
+<!-- Header -->
+<header class="header">
+    <div class="container">
+        <div class="header-content">
+            <a href="#" class="logo">
+                <span>phae</span>
+                <span class="logo-dot"></span>
+            </a>
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <a href="#contact" class="btn btn-outline">Get in Touch <i class="fas fa-arrow-right"></i></a>
+            </nav>
+            <button class="mobile-menu-btn">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </div>
+</header>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu">
+    <div class="mobile-menu-header">
+        <a href="#" class="logo">
+            <span>phae</span>
+            <span class="logo-dot"></span>
+        </a>
+        <button class="mobile-menu-close">
+            <i class="fas fa-times"></i>
+        </button>
+    </div>
+    <nav class="mobile-nav">
+        <ul class="mobile-nav-list">
+            <li><a href="#home" class="mobile-nav-link">Home</a></li>
+            <li><a href="#services" class="mobile-nav-link">Services</a></li>
+            <li><a href="#about" class="mobile-nav-link">About</a></li>
+            <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+        </ul>
+        <a href="#contact" class="btn btn-primary mobile-cta">Get in Touch <i class="fas fa-arrow-right"></i></a>
+    </nav>
+</div>
+
+<!-- Hero Section -->
+<section id="home" class="hero">
+    <div class="hero-orbs">
+        <div class="hero-orb hero-orb-1"></div>
+        <div class="hero-orb hero-orb-2"></div>
+        <div class="hero-orb hero-orb-3"></div>
+    </div>
+    <div class="container">
+        <div class="hero-content" data-aos="fade-up" data-aos-delay="200">
+            <h1 class="hero-title">
+                <span>Elevate Your</span>
+                <span class="gradient-text">Digital Presence</span>
+            </h1>
+            <p class="hero-subtitle">
+                We specialize in creating stunning digital experiences for companies that need to establish or elevate their online presence.
+            </p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary">Start Your Project <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span><a href="#services">Discover More</a></span>
+            <i class="fas fa-chevron-down bounce"></i>
+        </div>
+    </div>
+</section>
+
+<!-- Services Section -->
+<section id="services" class="services">
+    <div class="container">
+        <div class="section-header" data-aos="fade-up">
+            <h2 class="section-title"><span class="gradient-text">Our Services</span></h2>
+            <p class="section-subtitle">
+                We forge exceptional digital experiences through a blend of creativity, technical expertise, and meticulous craftsmanship.
+            </p>
+        </div>
+
+        <div class="services-grid">
+            <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="service-icon">
+                    <i class="fas fa-code"></i>
+                </div>
+                <h3 class="service-title">Website Development</h3>
+                <p class="service-description">
+                    Custom-forged, responsive websites that showcase your brand and engage your visitors with cutting-edge animations and interactivity.
+                </p>
+                <ul class="service-features">
+                    <li><span class="feature-dot"></span> Responsive design</li>
+                    <li><span class="feature-dot"></span> Interactive animations</li>
+                    <li><span class="feature-dot"></span> Performance optimization</li>
+                </ul>
+                <a href="#contact" class="service-link">Learn more <i class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="service-icon">
+                    <i class="fas fa-palette"></i>
+                </div>
+                <h3 class="service-title">Brand Identity</h3>
+                <p class="service-description">
+                    Meticulously crafted logos and comprehensive brand guidelines that establish a strong and consistent visual identity for your business.
+                </p>
+                <ul class="service-features">
+                    <li><span class="feature-dot"></span> Logo design</li>
+                    <li><span class="feature-dot"></span> Color palette</li>
+                    <li><span class="feature-dot"></span> Typography selection</li>
+                </ul>
+                <a href="#contact" class="service-link">Learn more <i class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="service-icon">
+                    <i class="fas fa-eye"></i>
+                </div>
+                <h3 class="service-title">UI/UX Design</h3>
+                <p class="service-description">
+                    User-focused interface designs that create intuitive and engaging experiences, hammered to perfection for increased conversions and customer satisfaction.
+                </p>
+                <ul class="service-features">
+                    <li><span class="feature-dot"></span> User research</li>
+                    <li><span class="feature-dot"></span> Wireframing</li>
+                    <li><span class="feature-dot"></span> Interaction design</li>
+                </ul>
+                <a href="#contact" class="service-link">Learn more <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="about">
+    <div class="container">
+        <div class="about-grid">
+            <div class="about-image" data-aos="fade-right">
+                <img src="https://placehold.co/800x600" alt="About Phae">
+                <div class="image-backdrop"></div>
+            </div>
+            <div class="about-content" data-aos="fade-left" data-aos-delay="200">
+                <h2 class="about-title"><span class="gradient-text">About Phae</span></h2>
+                <p class="about-description">
+                    Named after Hephaestus, the Greek god of craftsmen and blacksmiths, Phae embodies the spirit of meticulous craftsmanship and fiery creativity in the digital realm.
+                </p>
+                <p class="about-description">
+                    At Phae, we believe that every company deserves a remarkable online presence forged with precision and care. We specialize in working with businesses that need expert guidance, transforming raw ideas into refined digital experiences that stand the test of time.
+                </p>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <h3 class="stat-number">100%</h3>
+                        <p class="stat-label">Committed to Craft</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3 class="stat-number">24/7</h3>
+                        <p class="stat-label">Driven to Build</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="contact">
+    <div class="container">
+        <div class="section-header" data-aos="fade-up">
+            <h2 class="section-title"><span class="gradient-text">Let's Create Something Amazing</span></h2>
+            <p class="section-subtitle">
+                Ready to transform your digital presence? Get in touch with us today to discuss your project.
+            </p>
+        </div>
+
+        <div class="contact-form-container" data-aos="fade-up" data-aos-delay="200">
+            <form class="contact-form" action="https://formsubmit.co/a5f8982c506e5be8fb767f2e0319d22f" method="POST">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Your email" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" name="_subject" id="subject" placeholder="Project subject">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" style="resize:none;" placeholder="Tell us about your project" rows="5" required></textarea>
+                </div>
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="https://phae.me/thank-you.html">
+                <button type="submit" class="btn btn-primary btn-full">Send Message <i class="fas fa-arrow-right"></i></button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-info">
+                <a href="#" class="logo">
+                    <span>phae</span>
+                    <span class="logo-dot"></span>
+                </a>
+                <p class="footer-description">
+                    Forging exceptional digital experiences with the precision of master craftsmen, transforming ideas into refined digital masterpieces.
+                </p>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <h3 class="footer-title">Services</h3>
+                <ul class="footer-list">
+                    <li><a href="#">Website Development</a></li>
+                    <li><a href="#">Logo Design</a></li>
+                    <li><a href="#">Brand Identity</a></li>
+                    <li><a href="#">UI/UX Design</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h3 class="footer-title">Company</h3>
+                <ul class="footer-list">
+                    <li><a href="#about" style="cursor:pointer;">About Us</a></li>
+                    <li><a href="#contact" style="cursor:pointer;">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h3 class="footer-title">Contact Us</h3>
+                <ul class="footer-contact-list">
+                    <!-- Will comment out later when email troubles are fixed -->
+                    <!--
+                        <li>
+                            <span class="contact-label">Email:</span
+                            <a href="mailto:contact@phae.me">contact@phae.me</a>
+                        </li>
+
+                    -->
+                    <li>
+                        <span class="contact-label">Phone:</span>
+                        <a href="tel:+12072984387">+1 (207) 298 - 4387</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p class="copyright">© <span id="current-year"></span> Phae Design. All rights reserved.</p>
+            <div class="footer-bottom-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Sitemap</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
